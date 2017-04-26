@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Developerbackpack.Site.Code;
 
 namespace Developerbackpack.Site.Controllers
 {
@@ -26,7 +27,7 @@ namespace Developerbackpack.Site.Controllers
 
             return View();
         }
-
+        [RangeException]
         public string RangeTest(int id)
         {
             if (id > 100)
